@@ -10,7 +10,13 @@ private:
     int soma_acumulada;
     int status; //Jogando, parou ou explodiu
 public:
-    Jogador(/* args */);
+    Jogador();
     ~Jogador();
+    void setNome(string nome);
+    void setSoma_acumulada(int i);
+    void setStatus(int i);
+    string getNome();
+    int getSoma_acumulada();
+    int getStatus();
 };
 #endif
