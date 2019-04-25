@@ -17,6 +17,7 @@ obtidos por cada jogar e declarar o campeão da rodada.
 ### Autores:
 
 [Felipe Rodrigues](https://github.com/felipekjr)
+
 [Yago Beserra Marques](https://github.com/yagobmarques)
 
 ```markdown
