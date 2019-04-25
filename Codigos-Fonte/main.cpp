@@ -13,7 +13,7 @@ int main(int argc, char const *argv[])
     int n_estouro;
     cout<<"         Bem vindo ao Blackjack ET!\n\nEntre com um valor (inteiro) para definir o valor de estouro: ";
     cin>> n_estouro;
-    while(n_estouro < 0){
+    while(n_estouro < 1){
         //criar funçao queverifica se nao eh um char ou uma string
         cout<<"Entre com um valor valido (inteiro naior que zero): ";
         cin>> n_estouro;

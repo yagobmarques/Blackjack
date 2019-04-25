@@ -7,16 +7,14 @@
  OBJS = main.o mesa.o jogador.o dado.o
 
  $(PROG):$(OBJS)
-	$(CC) $(FLAGS) -o $(PROG) $(OBJS)
-
+	$(CC) -o $(PROG) $(OBJS)
  main.o:
 	$(CC) $(FLAGS) -c main.cpp
- mesa.o:
+ mesa.o: mesa.h
 	$(CC) $(FLAGS) -c mesa.cpp
- jogador.o:
+ jogador.o: jogador.h
 	$(CC) $(FLAGS) -c jogador.cpp
- dado.o:
+ dado.o: dado.h
 	$(CC) $(FLAGS) -c dado.cpp
- clean:
+ cls:
 	rm -f $(PROG) $(OBJS)
-	
