@@ -4,7 +4,6 @@
         this->nome = nome;
     }
     Jogador::Jogador(){
-        
     }
     Jogador::~Jogador(){
     }

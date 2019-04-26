@@ -1,13 +1,16 @@
 #Makefile for "LP1" C++ application
 #Created by Yago Marques
  
- PROG = blackjack!
+ PROG = blackjack! 
  CC = g++
  FLAGS = -O0 -g -Wall
  OBJS = main.o mesa.o jogador.o dado.o
 
  $(PROG):$(OBJS)
 	$(CC) -o $(PROG) $(OBJS)
+	rm -f *.o
+ all:
+	$(PROG)
  main.o:
 	$(CC) $(FLAGS) -c main.cpp
  mesa.o: mesa.h

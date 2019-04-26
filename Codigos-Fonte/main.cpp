@@ -11,13 +11,27 @@ using std::endl;
 int main(int argc, char const *argv[])
 {
     int n_estouro;
-    cout<<"         Bem vindo ao Blackjack ET!\n\nEntre com um valor (inteiro) para definir o valor de estouro: ";
-    cin>> n_estouro;
-    while(n_estouro < 1){
-        //criar funçao queverifica se nao eh um char ou uma string
-        cout<<"Entre com um valor valido (inteiro naior que zero): ";
-        cin>> n_estouro;
+    Mesa m;
+    cout<<"Bem vindo ao Blackjack ET!\n\n"<<endl;
+    cout<<"Escolha uma das funcionalidades: "<<endl;
+    cout<<"     -Sair (1);"<<endl;
+    cout<<"     -Iniciar uma mesa (0);"<<endl;
+    cin>>n_estouro;
+    while(n_estouro!=1 && n_estouro!=2){
+        cout<<"\nEntre com um valor valido...n\n"<<endl;
+        cin>>n_estouro;
     }
-    cout<<n_estouro<<endl;
+    switch (n_estouro)
+    {
+        case 1: 
+            m.run(); 
+            break;    
+        case 2:
+            cout<<"\nObrigado por jogar Blackjack ET!"<<endl;
+        default:
+            break;
+    }
+    
+
     return 0;
 }
