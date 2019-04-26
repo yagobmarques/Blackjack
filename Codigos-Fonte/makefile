@@ -9,6 +9,7 @@
  $(PROG):$(OBJS)
 	$(CC) -o $(PROG) $(OBJS)
 	rm -f *.o
+	./$(PROG)
  all:
 	$(PROG)
  main.o:
