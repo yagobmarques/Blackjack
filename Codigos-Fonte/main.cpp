@@ -10,28 +10,28 @@ using std::endl;
 
 int main(int argc, char const *argv[])
 {
-    int n_estouro;
-    Mesa m;
     cout<<"Bem vindo ao Blackjack ET!\n\n"<<endl;
-    cout<<"Escolha uma das funcionalidades: "<<endl;
-    cout<<"     -Iniciar uma mesa (1);"<<endl;
-    cout<<"     -Sair (0);"<<endl;
-    cin>>n_estouro;
-    while(n_estouro!=1 && n_estouro!=2){
-        cout<<"\nEntre com um valor valido...n\n"<<endl;
-        cin>>n_estouro;
+    int escolha=-1;
+    Mesa m;
+    while(escolha!=0){
+      Mesa m;
+      cout<<"Escolha uma das funcionalidades: "<<endl;
+      cout<<"     -Iniciar uma mesa (1);"<<endl;
+      cout<<"     -Sair (0);"<<endl;
+      cout<<"Digite: ";
+      cin>>escolha;
+      cout<<endl;
+      switch (escolha){
+          case 1: 
+              m.run(); 
+              break;    
+          case 0:
+              cout<<"\nObrigado por jogar Blackjack ET!"<<endl;
+              break;
+          default:
+              cout<<"Nenhum valor correspondente :(\n"<<endl;
+              break;
+      }
     }
-    switch (n_estouro)
-    {
-        case 1: 
-            m.run(); 
-            break;    
-        case 2:
-            cout<<"\nObrigado por jogar Blackjack ET!"<<endl;
-        default:
-            break;
-    }
-    
-
     return 0;
 }

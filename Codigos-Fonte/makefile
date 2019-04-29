@@ -3,7 +3,7 @@
  
  PROG = blackjack! 
  CC = g++
- FLAGS = -O0 -g -Wall
+ FLAGS = -std=c++11 -O0 -g -Wall
  OBJS = main.o mesa.o jogador.o dado.o
 
  $(PROG):$(OBJS)

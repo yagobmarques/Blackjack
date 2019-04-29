@@ -11,7 +11,7 @@ private:
     vector <Jogador> jogadores;
     Dado d1;
     Dado d2;
-    int aux;
+    int aux, valor_chave;
 public:
     Mesa();
     ~Mesa();
@@ -19,5 +19,7 @@ public:
     void adicionaJogador();
     void removeJogador();
     string iniciaPartida(vector <Jogador> jogadores); 
+    void verJogadores();
+    int verificaNome(string nome);
 };
 #endif
