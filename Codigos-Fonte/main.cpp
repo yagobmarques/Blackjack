@@ -11,17 +11,26 @@ using std::endl;
 int main(int argc, char const *argv[])
 {
     cout<<"Bem vindo ao Blackjack ET!\n\n"<<endl;
-    int escolha=-1;
+    string escolha="-1";
     Mesa m;
-    while(escolha!=0){
+    int aux;
+    while(escolha!="0"){
       Mesa m;
       cout<<"Escolha uma das funcionalidades: "<<endl;
       cout<<"     -Iniciar uma mesa (1);"<<endl;
       cout<<"     -Sair (0);"<<endl;
       cout<<"Digite: ";
-      cin>>escolha;
+      try
+        {
+            getline(cin,escolha);
+            aux = std::stoi(escolha);
+        }
+        catch(const std::exception& e)
+        {
+            aux= -1;
+        }
       cout<<endl;
-      switch (escolha){
+      switch (aux){
           case 1: 
               m.run(); 
               break;    

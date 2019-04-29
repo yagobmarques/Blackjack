@@ -4,6 +4,7 @@
         this->nome = nome;
     }
     Jogador::Jogador(){
+        this->soma_acumulada = 0;
     }
     Jogador::~Jogador(){
     }

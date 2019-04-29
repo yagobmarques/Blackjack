@@ -21,5 +21,6 @@ public:
     string iniciaPartida(vector <Jogador> jogadores); 
     void verJogadores();
     int verificaNome(string nome);
+    int verificaJogadores();
 };
 #endif
