@@ -1,4 +1,5 @@
 #include "mesa.h"
+#include "colors.h"
 Mesa::Mesa()
 {
   this->valor_chave = 0;
@@ -21,19 +22,17 @@ void Mesa::adicionaJogador()
 {
   Jogador j;
   string nome;
-  string limbo;
   cout << "Digite o nome do novo jogador: ";
   getline(cin, nome);
   j.setNome(nome);
   if (verificaNome(nome) == 0 && !nome.empty())
   {
     this->jogadores.push_back(j);
-    cout << "Jogador " << nome << " adicionado" << endl;
+    cout << "Jogador " <<GREEN<< nome << RESET << " adicionado" << endl;
   }
   else
   {
-    cout << "O jogador ja esta jogando\nVoltando ao menu...\n"
-         << endl;
+    cout <<RED<< "O jogador ja esta jogando\nVoltando ao menu...\n"<<RESET<< endl;
   }
   cout << endl;
 }
@@ -43,13 +42,13 @@ void Mesa::verJogadores()
        << endl;
   for (unsigned int j = 0; j < this->jogadores.size(); j++)
   {
-    cout << jogadores[j].getNome() << endl;
+    cout <<BOLDBLUE<< jogadores[j].getNome()<<RESET<< endl;
   }
   cout << endl;
 }
 void Mesa::removeJogador()
 {
-  string nome, limbo;
+  string nome;
   cout << "Digite o nome do jogador a ser removido: ";
 
   getline(cin, nome);
@@ -60,7 +59,7 @@ void Mesa::removeJogador()
       if (jogadores[j].getNome() == nome)
       {
         this->jogadores.erase(jogadores.begin() + j);
-        cout << "Jogador " << nome << " removido\n"
+        cout << "Jogador "<<RED << nome << RESET<<" removido\n"
              << endl;
         break;
       }
@@ -68,8 +67,7 @@ void Mesa::removeJogador()
   }
   else
   {
-    cout << "Jogador inexiste\n"
-         << endl;
+    cout <<RED<< "Jogador inexiste\n"<<RESET<< endl;
   }
 }
 std::__cxx11::string Mesa::iniciaPartida(std::vector<Jogador> jogadores)
@@ -94,7 +92,7 @@ int Mesa::verificaJogadores()
 int Mesa::run()
 {
   this->aux = 1;
-  string resposta, limbo;
+  string resposta;
   do
   {
     cout << "Entre com o valor chave para o jogo:";
@@ -106,17 +104,22 @@ int Mesa::run()
     catch (const std::exception &e)
     {
     }
-
+    if (this->valor_chave == 0 || this->valor_chave < 0){
+      cout<<RED<<"\nEntre com um valor valido!"<<RESET<<endl;
+      cout<<endl;
+    }
+    
   } while (this->valor_chave == 0 || this->valor_chave < 0);
   cout << endl;
   while (this->aux != 0)
   {
+    cout<<CYAN<<"----- MENU DA MESA ------"<<RESET<<endl;
     cout << "Escolha uma das funcionalidades: " << endl;
-    cout << "     -Adicionar jogador (1);" << endl;
-    cout << "     -Remover um jogador jogador (2);" << endl;
-    cout << "     -Iniciar uma partida (3);" << endl;
-    cout << "     -Ver jogadores na partida (4);" << endl;
-    cout << "     -sair (0);" << endl;
+    cout << "1 - Adicionar jogador;" << endl;
+    cout << "2 - Remover um jogador;" << endl;
+    cout << "3 - Iniciar uma partida;" << endl;
+    cout << "4 - Ver jogadores na partida;" << endl;
+    cout << "0 - sair;" << endl;
     cout << "Digite: ";
     try
     {
@@ -141,19 +144,18 @@ int Mesa::run()
     case 3:
       if (Mesa::verificaJogadores() == 1)
       {
-        cout << "O vencedor foi: " << Mesa::iniciaPartida(this->jogadores) << endl;
+        cout << "O vencedor foi: " GREEN<< Mesa::iniciaPartida(this->jogadores)<<RESET<< endl;
       }
       else
       {
-        cout << "Jogadores insificientes :( \n"
-             << endl;
+        cout <<RED<<"Jogadores insificientes :( \n"<<RESET<< endl;
       }
       break;
     case 4:
       Mesa::verJogadores();
       break;
     default:
-      cout << "Caractere invalido :(" << endl;
+      cout <<RED<< "Caractere invalido :("<<RESET<< endl;
       break;
     }
   }

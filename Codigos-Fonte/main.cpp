@@ -3,6 +3,7 @@
 #include "jogador.h"
 #include "mesa.h"
 #include "dado.h"
+#include "colors.h"
 
 using std::cin;
 using std::cout;
@@ -16,9 +17,10 @@ int main(int argc, char const *argv[])
     int aux;
     while(escolha!="0"){
       Mesa m;
+      cout<<CYAN<<"----- MENU PRINCIPAL -----"<<RESET<<endl;
       cout<<"Escolha uma das funcionalidades: "<<endl;
-      cout<<"     -Iniciar uma mesa (1);"<<endl;
-      cout<<"     -Sair (0);"<<endl;
+      cout<<"1 - Iniciar uma mesa;"<<endl;
+      cout<<"0 - Sair;"<<endl;
       cout<<"Digite: ";
       try
         {
@@ -35,10 +37,10 @@ int main(int argc, char const *argv[])
               m.run(); 
               break;    
           case 0:
-              cout<<"\nObrigado por jogar Blackjack ET!"<<endl;
+              cout<<CYAN<<"\nObrigado por jogar Blackjack ET!"<<RESET<<endl;
               break;
           default:
-              cout<<"Nenhum valor correspondente :(\n"<<endl;
+              cout<<RED<<"Nenhum valor correspondente :(\n"<<RESET<<endl;
               break;
       }
     }
