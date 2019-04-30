@@ -7,6 +7,7 @@ void Jogador::setNome(string nome)
 Jogador::Jogador()
 {
     this->soma_acumulada = 0;
+    this->status = 0;
 }
 Jogador::~Jogador()
 {

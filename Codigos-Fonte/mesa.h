@@ -2,6 +2,7 @@
 #define MESA_H
 #include <vector>
 #include <iostream>
+#include <bits/stdc++.h>
 #include <string>
 #include "jogador.h"
 #include "dado.h"
@@ -24,5 +25,7 @@ class Mesa
     void verJogadores();
     int verificaNome(string nome);
     int verificaJogadores();
+    int jogadoresAtivos(vector<Jogador> jogadores);
+    string analisaParados(vector<Jogador> jogadores);
 };
 #endif
