@@ -31,3 +31,9 @@ int Jogador::getStatus()
 {
     return this->status;
 }
+void Jogador::jogarDados(){
+    Dado d;
+    int d1 = d.jogar();
+    int d2 = d.jogar();
+    this->soma_acumulada += d1 + d2;
+}

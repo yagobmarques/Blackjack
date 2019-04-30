@@ -4,7 +4,7 @@
  PROG = blackjack! 
  CC = g++
  FLAGS = -std=c++11 -O0 -g -Wall
- OBJS = main.o mesa.o jogador.o dado.o
+ OBJS = main.o mesa.o jogador.o dado.o lobby.o
 
  $(PROG):$(OBJS)
 	$(CC) -o $(PROG) $(OBJS)
@@ -20,5 +20,7 @@
 	$(CC) $(FLAGS) -c jogador.cpp
  dado.o: dado.h
 	$(CC) $(FLAGS) -c dado.cpp
+ lobby.o: lobby.h
+	$(CC) $(FLAGS) -c lobby.cpp
  cls:
 	rm -f $(PROG) $(OBJS)

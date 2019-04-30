@@ -2,6 +2,7 @@
 #define JOGADOR_H
 #include <string>
 #include <iostream>
+#include "dado.h"
 using namespace std;
 
 class Jogador
@@ -9,7 +10,7 @@ class Jogador
   private:
     string nome;
     int soma_acumulada;
-    int status; //Jogando, parou ou explodiu
+    int status; //Jogando, parou ou explodiu (-1 estourou, 0 jogando, 1 parou)
   public:
     Jogador();
     ~Jogador();
@@ -19,5 +20,6 @@ class Jogador
     string getNome();
     int getSoma_acumulada();
     int getStatus();
+    void jogarDados();
 };
 #endif

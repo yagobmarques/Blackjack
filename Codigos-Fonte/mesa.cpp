@@ -72,10 +72,24 @@ void Mesa::removeJogador()
 }
 std::__cxx11::string Mesa::iniciaPartida(std::vector<Jogador> jogadores)
 {
-  for (unsigned int j = 0; j < jogadores.size(); j++)
-  {
+  cout<<BOLDBLUE<<"===== Partida iniciada! =====\n"<<RESET<<endl; 
+  cout<<"O valor chave da partida eh "<<BOLDYELLOW<<this->valor_chave<<RESET<<endl;
+  cout<<endl;
+  int v = 0; //variavel que faz a condição de parada da partida
+  while(v == 0){
+    for (unsigned int j = 0; j < jogadores.size(); j++)
+    {
+      jogadores[j].jogarDados();
+    }
+    for (unsigned int j = 0; j < jogadores.size(); j++)
+    {
+      cout<<jogadores[j].getSoma_acumulada()<<endl;
+    }
+    break;
   }
+  
 
+  
   return "Yago";
 }
 int Mesa::verificaJogadores()
@@ -95,7 +109,7 @@ int Mesa::run()
   string resposta;
   do
   {
-    cout << "Entre com o valor chave para o jogo:";
+    cout << "Entre com o valor chave para o jogo: ";
     try
     {
       getline(cin, resposta);
