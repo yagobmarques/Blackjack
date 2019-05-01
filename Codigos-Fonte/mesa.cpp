@@ -140,7 +140,7 @@ std::__cxx11::string Mesa::iniciaPartida(std::vector<Jogador> jogadores)
           try
           {
             cout << jogadores[j].getNome() << ", o que desejas fazer?" << endl;
-            cout << "1 - Puxar cartas" << endl;
+            cout << "1 - Jogar dados" << endl;
             cout << "2 - Parar" << endl;
             cout << "Digite: ";
             getline(cin, choice);
@@ -165,6 +165,7 @@ std::__cxx11::string Mesa::iniciaPartida(std::vector<Jogador> jogadores)
         if (jogadores[j].getStatus() == 0)
         {
           jogadores[j].jogarDados();
+          cout<<jogadores[j].jogarDados()<<" esta com "<<jogadores[j].getSoma_acumulada()<<endl;
         }
         if (jogadores[j].getSoma_acumulada() > this->valor_chave)
         {
