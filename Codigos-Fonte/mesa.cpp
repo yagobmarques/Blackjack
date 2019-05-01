@@ -1,12 +1,32 @@
+/**
+* @file mesa.cpp
+* @brief Arquivo .cpp que implementa as funções de mesa.h
+* @author Yago Beserra Marques
+* @since 25/04/2019
+* @date 01/05/2019
+*/
 #include "mesa.h"
 #include "colors.h"
+/**
+* @brief construtor com valores padrão
+* @return Nulo
+*/
 Mesa::Mesa()
 {
   this->valor_chave = 0;
 }
+/**
+* @brief Destrutor
+* @return Nulo
+*/
 Mesa::~Mesa()
 {
 }
+/**
+* @brief verifica se um nome já está no vector
+* @param nome String digitada pelo usuário
+* @return 1 se já existe, 0 se não existe
+*/
 int Mesa::verificaNome(string nome)
 {
   for (unsigned int j = 0; j < this->jogadores.size(); j++)
@@ -18,6 +38,11 @@ int Mesa::verificaNome(string nome)
   }
   return 0;
 }
+/**
+* @brief Função que printa na tela todos os jogadores ativos na rodada
+* @param jogadores Um vetor do tipo <Jogador>
+* @return Se existe alguem jogando 1, senão 0
+*/
 int Mesa::jogadoresAtivos(vector<Jogador> jogadores)
 {
   for (auto j : jogadores)
@@ -29,10 +54,15 @@ int Mesa::jogadoresAtivos(vector<Jogador> jogadores)
   }
   return 0;
 }
+/**
+* @brief Analisa os jogadores parados para saber qual chegou mais perto do valor chave
+* @param jogadores Vector de jogadores (após o jogo)
+* @return String Que é Empate, ou o nome do vencedor!
+*/
 string Mesa::analisaParados(vector<Jogador> jogadores)
 {
-  vector<Jogador> aux;
-  Jogador aux1;
+  vector<Jogador> aux; /**< Vector do tipo jogador para ordenarmos pelos pontos */
+  Jogador aux1; /**< Variável auxiliar para fazermos o swing na hora da comparação */
   for (auto j : jogadores)
   {
     if (j.getStatus() == 1)
@@ -62,6 +92,10 @@ string Mesa::analisaParados(vector<Jogador> jogadores)
   }
   return "Empate";
 }
+/**
+* @brief Adiciona o jogado com um nome (fornecido pelo usuário) ao vector de jogadores
+* @return Void
+*/
 void Mesa::adicionaJogador()
 {
   Jogador j;
@@ -81,6 +115,10 @@ void Mesa::adicionaJogador()
   }
   cout << endl;
 }
+/**
+* @brief Printa na saida padrão todos os jogadores cadastrados
+* @return Void
+*/
 void Mesa::verJogadores()
 {
   cout << "Jogadores ativos:\n"
@@ -95,6 +133,10 @@ void Mesa::verJogadores()
   }
   cout << endl;
 }
+/**
+* @brief Remove um jogador a partir de um nome fornecido pelo usuário
+* @return Void
+*/
 void Mesa::removeJogador()
 {
   string nome;
@@ -120,6 +162,11 @@ void Mesa::removeJogador()
          << RESET << endl;
   }
 }
+/**
+* @brief Inicia uma partida
+* @param jogadores Vetor do tipo Jogador que tem os jogadores cadastrado pelo usuário
+* @return String que contém o nome do vencedor ou "Empate"
+*/
 std::__cxx11::string Mesa::iniciaPartida(std::vector<Jogador> jogadores)
 {
   string choice;
@@ -205,7 +252,10 @@ std::__cxx11::string Mesa::iniciaPartida(std::vector<Jogador> jogadores)
   jogadores.push_back(Empate);
   return analisaParados(jogadores);
 }
-
+/**
+* @brief Verifica tamanho mínimo dos jogadores para iniciar uma partida
+* @return 1 se pode iniciar, ou 0 se não pode
+*/
 int Mesa::verificaJogadores()
 {
   if (this->jogadores.size() > 1)
@@ -217,6 +267,10 @@ int Mesa::verificaJogadores()
     return 0;
   }
 }
+/**
+* @brief Inicia os procedimentos da criação de uma mesa
+* @return inteiro
+*/
 int Mesa::run()
 {
   this->aux = 1;
