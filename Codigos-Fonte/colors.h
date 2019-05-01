@@ -1,3 +1,10 @@
+/**
+* @file colors.h
+* @brief Arquivo .h que dar cor ao terminal linux
+* @author Yago Beserra Marques
+* @since 25/04/2019
+* @date 01/05/2019
+*/
 #ifndef COLORS_H
 #define COLORS_H
 
