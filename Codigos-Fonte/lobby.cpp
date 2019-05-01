@@ -1,16 +1,36 @@
+    
+/**
+* @file lobby.cpp
+* @brief Classe que faz uma uma mesa
+* @author Yago Beserra Marques
+* @since 25/04/2019
+* @date 01/05/2019
+*/
+
 #include "lobby.h"
+/**
+* @brief Construtor
+* @return Nulo
+*/
 Lobby::Lobby(/* args */)
 {
 }
-
+/**
+* @brief Destrutor
+* @return Nulo
+*/
 Lobby::~Lobby()
 {
 }
+/**
+* @brief Responsavel por iniciar uma Mesa ou sair do Programa
+* @return Retorna um inteiro 
+*/
 int Lobby::runGame(){
     cout<<YELLOW<<"\nBem vindo ao Blackjack ET!\n"<<RESET<<endl;
-    string escolha="-1";
-    Mesa m;
-    int aux;
+    string escolha="-1"; /**< Variável de escolha */
+    Mesa m; /**< Cria uma mesa */
+    int aux; /**< Variavel para auxiliar no bloco try catch */
     while(escolha!="0"){
       Mesa m;
       cout<<CYAN<<"----- MENU PRINCIPAL -----"<<RESET<<endl;
