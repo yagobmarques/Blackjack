@@ -198,6 +198,11 @@ std::__cxx11::string Mesa::iniciaPartida(std::vector<Jogador> jogadores)
       v = 1;
     }
   }
+  cout << endl;
+  Jogador Empate;
+  Empate.setNome("Empate");
+  Empate.setStatus(1);
+  jogadores.push_back(Empate);
   return analisaParados(jogadores);
 }
 
