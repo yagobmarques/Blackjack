@@ -1,3 +1,12 @@
+    
+/**
+* @file jogador.h
+* @brief Arquivo .h que declara as funções para jogador.cpp implementar
+* @author Yago Beserra Marques
+* @since 25/04/2019
+* @date 01/05/2019
+*/
+
 #ifndef JOGADOR_H
 #define JOGADOR_H
 #include <string>
@@ -8,9 +17,9 @@ using namespace std;
 class Jogador
 {
   private:
-    string nome;
-    int soma_acumulada;
-    int status; //Jogando, parou ou explodiu (-1 estourou, 0 jogando, 1 parou)
+    string nome; /**< Define o nome do jogador */
+    int soma_acumulada; /**< Representa a soma de todos os dados tirados pelo jogador */
+    int status;/**< Define o status do jogador. Se -1 é estourou, 0 é jogando, 1 é parou*/
   public:
     Jogador();
     ~Jogador();
