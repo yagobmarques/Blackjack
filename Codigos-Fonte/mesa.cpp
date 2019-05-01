@@ -165,7 +165,8 @@ std::__cxx11::string Mesa::iniciaPartida(std::vector<Jogador> jogadores)
         if (jogadores[j].getStatus() == 0)
         {
           jogadores[j].jogarDados();
-          cout<<jogadores[j].jogarDados()<<" esta com "<<jogadores[j].getSoma_acumulada()<<endl;
+          cout<<jogadores[j].getNome()<<" esta com "<<jogadores[j].getSoma_acumulada()<<endl;
+          cout<<endl;
         }
         if (jogadores[j].getSoma_acumulada() > this->valor_chave)
         {
@@ -185,6 +186,7 @@ std::__cxx11::string Mesa::iniciaPartida(std::vector<Jogador> jogadores)
       }
     }
     cout << endl;
+    cout << "O valor chave da partida eh " << BOLDYELLOW << this->valor_chave << RESET << endl;
     cout << BLUE << "----- Valores atuais -----" << RESET << endl;
     for (unsigned int j = 0; j < jogadores.size(); j++)
     {
