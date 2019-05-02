@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['iniciapartida',['iniciaPartida',['../class_mesa.html#ab4bb38a6eb841eeaf81ee09f379a8121',1,'Mesa']]]
+  ['iniciapartida',['iniciaPartida',['../d8/d5e/class_mesa.html#ad5b6f60e66a0a8c3fe8943f206348b86',1,'Mesa']]]
 ];

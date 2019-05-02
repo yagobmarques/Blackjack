@@ -4,7 +4,7 @@ var class_mesa =
     [ "~Mesa", "class_mesa.html#aa0a1b83b8058f80f4f27ec46cc5e9524", null ],
     [ "adicionaJogador", "class_mesa.html#a06b001e907762c73065230bbae1b7272", null ],
     [ "analisaParados", "class_mesa.html#a02449e4a37f8f32f1315fa954a8a52f8", null ],
-    [ "iniciaPartida", "class_mesa.html#ab4bb38a6eb841eeaf81ee09f379a8121", null ],
+    [ "iniciaPartida", "class_mesa.html#ad5b6f60e66a0a8c3fe8943f206348b86", null ],
     [ "jogadoresAtivos", "class_mesa.html#ab444fffc132ebf700dcca5ebd5d533a3", null ],
     [ "removeJogador", "class_mesa.html#a36f917140d77099e2da7a26586df04e8", null ],
     [ "run", "class_mesa.html#a129bc8199f83880303f1b655eca5d95d", null ],

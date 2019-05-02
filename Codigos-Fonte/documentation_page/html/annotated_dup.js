@@ -1,7 +1,7 @@
 var annotated_dup =
 [
-    [ "Dado", "class_dado.html", "class_dado" ],
-    [ "Jogador", "class_jogador.html", "class_jogador" ],
-    [ "Lobby", "class_lobby.html", "class_lobby" ],
-    [ "Mesa", "class_mesa.html", "class_mesa" ]
+    [ "Dado", "d3/dcd/class_dado.html", "d3/dcd/class_dado" ],
+    [ "Jogador", "dc/da4/class_jogador.html", "dc/da4/class_jogador" ],
+    [ "Lobby", "db/dd7/class_lobby.html", "db/dd7/class_lobby" ],
+    [ "Mesa", "d8/d5e/class_mesa.html", "d8/d5e/class_mesa" ]
 ];

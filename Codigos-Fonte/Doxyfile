@@ -5,12 +5,12 @@
 #---------------------------------------------------------------------------    
 DOXYFILE_ENCODING      = UTF-8    
 PROJECT_NAME           = "Blackjack Et"    
-PROJECT_NUMBER         = "4.765"    
+PROJECT_NUMBER         = "4.766"    
 PROJECT_BRIEF          = "Semelhante a um Blackjack, mas com dados, e valor-chave variável"
 PROJECT_LOGO           =     
 OUTPUT_DIRECTORY       = ./documentation_page
-CREATE_SUBDIRS         = NO    
-ALLOW_UNICODE_NAMES    = NO    
+CREATE_SUBDIRS         = NO  
+ALLOW_UNICODE_NAMES    = NO 
 OUTPUT_LANGUAGE        = Portuguese   
 BRIEF_MEMBER_DESC      = YES    
 REPEAT_BRIEF           = YES    

@@ -74,6 +74,9 @@ string Mesa::analisaParados(vector<Jogador> jogadores)
   {
     for (unsigned int h = 0; h < aux.size(); h++)
     {
+      /**
+       * @brief Faz o swing de dois jogadores
+       */
       if (aux[j].getSoma_acumulada() < aux[h].getSoma_acumulada())
       {
         aux1 = aux[j];
@@ -98,8 +101,8 @@ string Mesa::analisaParados(vector<Jogador> jogadores)
 */
 void Mesa::adicionaJogador()
 {
-  Jogador j;
-  string nome;
+  Jogador j; /**< Variavel do tipo jogador para colocar no vector<Jogador> jogadores */
+  string nome; /**< Usado para obter a string digitada pelo usuario */
   cout << "Digite o nome do novo jogador: ";
   getline(cin, nome);
   j.setNome(nome);
@@ -139,7 +142,7 @@ void Mesa::verJogadores()
 */
 void Mesa::removeJogador()
 {
-  string nome;
+  string nome; /**< Usado para receber a string digitada pelo usuario */
   cout << "Digite o nome do jogador a ser removido: ";
 
   getline(cin, nome);
@@ -149,7 +152,7 @@ void Mesa::removeJogador()
     {
       if (jogadores[j].getNome() == nome)
       {
-        this->jogadores.erase(jogadores.begin() + j);
+        this->jogadores.erase(jogadores.begin() + j); /**< Removendo o jogador a partir do indice */
         cout << "Jogador " << RED << nome << RESET << " removido\n"
              << endl;
         break;
@@ -169,13 +172,13 @@ void Mesa::removeJogador()
 */
 string Mesa::iniciaPartida(std::vector<Jogador> jogadores)
 {
-  string choice;
-  int aux = -2;
+  string choice; /**< Variavel para capturar a escolha do usuario */
+  int aux = -2; /**< Variavel auxiliar para fazer converçoes e garantir o loop de entradas invalidas */
   cout << BOLDBLUE << "===== Partida iniciada! =====\n"
        << RESET << endl;
   cout << "O valor chave da partida eh " << BOLDYELLOW << this->valor_chave << RESET << endl;
   cout << endl;
-  int v = 0; //variavel que faz a condição de parada da partida
+  int v = 0; /**< variavel que faz a condição de parada da partida */
   while (v == 0)
   {
     for (unsigned int j = 0; j < jogadores.size(); j++)
@@ -218,7 +221,6 @@ string Mesa::iniciaPartida(std::vector<Jogador> jogadores)
         if (jogadores[j].getSoma_acumulada() > this->valor_chave)
         {
           jogadores[j].setStatus(-1);
-          //jogadores.erase(jogadores.begin()+j);
         }
           if (jogadores[j].getSoma_acumulada() == this->valor_chave)
           {
@@ -246,7 +248,7 @@ string Mesa::iniciaPartida(std::vector<Jogador> jogadores)
     }
   }
   cout << endl;
-  Jogador Empate;
+  Jogador Empate; 
   Empate.setNome("Empate");
   Empate.setStatus(1);
   jogadores.push_back(Empate);
@@ -273,8 +275,10 @@ int Mesa::verificaJogadores()
 */
 int Mesa::run()
 {
-  this->aux = 1;
-  string resposta, vencedor;
+  /** @brief Variavel que controla o laço do-while e faz as devidas conversoes */
+  this->aux = 1; /**< variavel bilbo que controla o laço do while e faz as devidas conversoes */
+  string resposta; /**< variavel que auxilia no tratamento da entrada do usuario */
+  string vencedor;/**< variavel para printar o vencedor da partida */
   do
   {
     cout << "Entre com o valor chave para o jogo: ";
