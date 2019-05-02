@@ -1,6 +1,6 @@
 /**
 * @file dado.cpp
-* @brief Arquivo .cpp que implementa as funções de dado.h
+* @brief Implementa as funções de dado.h
 * @author Yago Beserra Marques
 * @since 25/04/2019
 * @date 01/05/2019

@@ -8,7 +8,8 @@
 #include "lobby.h"
 /**
 * @brief Main
-* @param argc Quantidade de parametros e argv O valor dos parâmetros
+* @param argc Quantidade de parametros
+* @param argv[] O valor dos parâmetros
 * @return inteiro
 */
 int main(int argc, char const *argv[])

@@ -1,7 +1,7 @@
     
 /**
 * @file jogador.h
-* @brief Arquivo .h que declara as funções para jogador.cpp implementar
+* @brief Declara as funções e alguns parâmetros importantes para jogador.cpp
 * @author Yago Beserra Marques
 * @since 25/04/2019
 * @date 01/05/2019

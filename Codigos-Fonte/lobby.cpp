@@ -1,7 +1,7 @@
     
 /**
 * @file lobby.cpp
-* @brief Classe que faz uma uma mesa
+* @brief Implementa as funções de lobby.h
 * @author Yago Beserra Marques
 * @since 25/04/2019
 * @date 01/05/2019

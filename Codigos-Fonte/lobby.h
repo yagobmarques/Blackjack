@@ -1,6 +1,6 @@
 /**
 * @file lobby.h
-* @brief Arquivo .ch que declara as funções para lobby.h
+* @brief Declara as funções para lobby.cpp
 * @author Yago Beserra Marques
 * @since 25/04/2019
 * @date 01/05/2019

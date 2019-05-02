@@ -1,6 +1,6 @@
 /**
 * @file dado.h
-* @brief Cabeçalhos das funçoes
+* @brief Declara as assinaturas das funções e algumas variáveis para dado.cpp
 * @author Yago Beserra Marques
 * @date 01/05/2019
 */
