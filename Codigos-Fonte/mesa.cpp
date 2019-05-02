@@ -167,7 +167,7 @@ void Mesa::removeJogador()
 * @param jogadores Vetor do tipo Jogador que tem os jogadores cadastrado pelo usuário
 * @return String que contém o nome do vencedor ou "Empate"
 */
-std::__cxx11::string Mesa::iniciaPartida(std::vector<Jogador> jogadores)
+std::string Mesa::iniciaPartida(std::vector<Jogador> jogadores)
 {
   string choice;
   int aux = -2;
@@ -220,16 +220,16 @@ std::__cxx11::string Mesa::iniciaPartida(std::vector<Jogador> jogadores)
           jogadores[j].setStatus(-1);
           //jogadores.erase(jogadores.begin()+j);
         }
-        if (jogadores[j].getSoma_acumulada() == this->valor_chave)
-        {
-          cout << BLUE << "----- Valores atuais -----" << RESET << endl;
-          for (unsigned int j = 0; j < jogadores.size(); j++)
+          if (jogadores[j].getSoma_acumulada() == this->valor_chave)
           {
-            cout << BOLDBLUE << jogadores[j].getNome() << RESET << ": " << jogadores[j].getSoma_acumulada() << endl;
+            cout << BLUE << "----- Valores atuais -----" << RESET << endl;
+            for (unsigned int j = 0; j < jogadores.size(); j++)
+            {
+              cout << BOLDBLUE << jogadores[j].getNome() << RESET << ": " << jogadores[j].getSoma_acumulada() << endl;
+            }
+            cout << endl;
+            return jogadores[j].getNome();
           }
-          cout << endl;
-          return jogadores[j].getNome();
-        }
       }
     }
     cout << endl;
