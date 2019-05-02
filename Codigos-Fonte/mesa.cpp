@@ -167,7 +167,7 @@ void Mesa::removeJogador()
 * @param jogadores Vetor do tipo Jogador que tem os jogadores cadastrado pelo usuário
 * @return String que contém o nome do vencedor ou "Empate"
 */
-std::string Mesa::iniciaPartida(std::vector<Jogador> jogadores)
+string Mesa::iniciaPartida(std::vector<Jogador> jogadores)
 {
   string choice;
   int aux = -2;
