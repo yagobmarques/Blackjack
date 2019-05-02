@@ -14,34 +14,14 @@ rodada (ou seja, não for excluído) e obtiver o número de pontos agregados mai
 próximo de N. Ao final de cada rodada, o programa deverá listar os pontos agregados
 obtidos por cada jogar e declarar o campeão da rodada.
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+### Como compilar
+Vá para o diretório raiz do projeto e digite no terminal o comando: 
 ```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/yagobmarques/Blackjack/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+make
+```
+### Documentação
+A documentação está em no camilho ./Codigos-Fonte/documentation-page/html/annotated.html.
+Mas também, se quiser execurtar o Doxygen basta digitar o seguinte comando na raiz do projeto:
+```
+doxygen
+```
