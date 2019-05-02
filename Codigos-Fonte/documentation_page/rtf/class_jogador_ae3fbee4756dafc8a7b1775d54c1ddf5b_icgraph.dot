@@ -1,0 +1,15 @@
+digraph "Jogador::setStatus"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Jogador::setStatus",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Mesa::iniciaPartida",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_mesa.html#ab4bb38a6eb841eeaf81ee09f379a8121",tooltip="Inicia uma partida. "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Mesa::run",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_mesa.html#a129bc8199f83880303f1b655eca5d95d",tooltip="Inicia os procedimentos da criação de uma mesa. "];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Lobby::runGame",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_lobby.html#ad2e0ed41f1b35709445d60221d311d98",tooltip="Responsavel por iniciar uma Mesa ou sair do Programa. "];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089",tooltip="Main. "];
+}
