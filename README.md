@@ -14,13 +14,24 @@ rodada (ou seja, não for excluído) e obtiver o número de pontos agregados mai
 próximo de N. Ao final de cada rodada, o programa deverá listar os pontos agregados
 obtidos por cada jogar e declarar o campeão da rodada.
 
+### Tecnologias necessárias
+- c++11
+- MakeFile
+- Doxygen
 ### Como compilar
+
 Vá para o diretório raiz do projeto e digite no terminal o comando: 
 ```
+cd Programa_02
 make
 ```
+### Como executar
+no diiretório Programa_02 digite:
+```
+./blackjack!
+```
 ### Documentação
-A documentação está em no camilho ./Codigos-Fonte/documentation-page/html/annotated.html.
+A documentação está em no camilho ./Programa_02/documentation-page/html/annotated.html.
 Mas também, se quiser execurtar o Doxygen basta digitar o seguinte comando na raiz do projeto:
 ```
 doxygen
