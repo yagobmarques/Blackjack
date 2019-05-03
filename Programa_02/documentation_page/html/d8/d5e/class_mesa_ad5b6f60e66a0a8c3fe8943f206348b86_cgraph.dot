@@ -1,0 +1,17 @@
+digraph "Mesa::iniciaPartida"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node18 [label="Mesa::iniciaPartida",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node18 -> Node19 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node19 [label="Mesa::analisaParados",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d8/d5e/class_mesa.html#a02449e4a37f8f32f1315fa954a8a52f8",tooltip="Analisa os jogadores parados para saber qual chegou mais perto do valor chave. "];
+  Node19 -> Node20 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node20 [label="Jogador::getNome",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/da4/class_jogador.html#ad99c974eb0be82064fbca936adc246d9",tooltip="Pega valor da variável Nome. "];
+  Node18 -> Node21 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node21 [label="Mesa::jogadoresAtivos",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d8/d5e/class_mesa.html#ab444fffc132ebf700dcca5ebd5d533a3",tooltip="Função que printa na tela todos os jogadores ativos na rodada. "];
+  Node18 -> Node22 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node22 [label="Jogador::setNome",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/da4/class_jogador.html#a0d9f47c126ff7fd73863c1bcba346afe",tooltip="Coloca Nome. "];
+  Node18 -> Node23 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node23 [label="Jogador::setStatus",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/da4/class_jogador.html#ae3fbee4756dafc8a7b1775d54c1ddf5b",tooltip="Modifica o status do jogador. "];
+}

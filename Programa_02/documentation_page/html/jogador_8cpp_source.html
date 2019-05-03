@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Blackjack Et: Código-Fonte de jogador.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Blackjack Et
+   &#160;<span id="projectnumber">4.766</span>
+   </div>
+   <div id="projectbrief">Semelhante a um Blackjack, mas com dados, e valor-chave variável</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Localizar');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('jogador_8cpp_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">jogador.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="jogador_8cpp.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="jogador_8h.html">jogador.h</a>&quot;</span></div><div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_jogador.html#a0d9f47c126ff7fd73863c1bcba346afe">   13</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_jogador.html#a0d9f47c126ff7fd73863c1bcba346afe">Jogador::setNome</a>(<span class="keywordtype">string</span> nome)</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    this-&gt;nome = <a class="code" href="class_jogador.html#a2d60be9d209194e0a9451aca6f1f12ec">nome</a>;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;}</div><div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_jogador.html#a94a4939138ce04d2f3ceb68257517ac1">   21</a></span>&#160;<a class="code" href="class_jogador.html#a94a4939138ce04d2f3ceb68257517ac1">Jogador::Jogador</a>()</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    this-&gt;<a class="code" href="class_jogador.html#add2f41fe461e5c75f86324cbd5066d59">soma_acumulada</a> = 0;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    this-&gt;<a class="code" href="class_jogador.html#aac759f4ab977b41dbeb8f089bbff8eda">status</a> = 0;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div><div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_jogador.html#a3e62c32199fc9cfbcf22cf83f9008be6">   30</a></span>&#160;<a class="code" href="class_jogador.html#a3e62c32199fc9cfbcf22cf83f9008be6">Jogador::~Jogador</a>()</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div><div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_jogador.html#a16221b33e47d7e32a72d743a83a54ba9">   38</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_jogador.html#a16221b33e47d7e32a72d743a83a54ba9">Jogador::setSoma_acumulada</a>(<span class="keywordtype">int</span> i)</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    this-&gt;<a class="code" href="class_jogador.html#add2f41fe461e5c75f86324cbd5066d59">soma_acumulada</a> = i;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div><div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_jogador.html#ae3fbee4756dafc8a7b1775d54c1ddf5b">   47</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_jogador.html#ae3fbee4756dafc8a7b1775d54c1ddf5b">Jogador::setStatus</a>(<span class="keywordtype">int</span> i)</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    this-&gt;<a class="code" href="class_jogador.html#aac759f4ab977b41dbeb8f089bbff8eda">status</a> = i;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div><div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class_jogador.html#ad99c974eb0be82064fbca936adc246d9">   55</a></span>&#160;<span class="keywordtype">string</span> <a class="code" href="class_jogador.html#ad99c974eb0be82064fbca936adc246d9">Jogador::getNome</a>()</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;{</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="class_jogador.html#a2d60be9d209194e0a9451aca6f1f12ec">nome</a>;</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div><div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="class_jogador.html#afbb18454d2e8bd060a16cbabaec87c9a">   63</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="class_jogador.html#afbb18454d2e8bd060a16cbabaec87c9a">Jogador::getSoma_acumulada</a>()</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;{</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="class_jogador.html#add2f41fe461e5c75f86324cbd5066d59">soma_acumulada</a>;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}</div><div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="class_jogador.html#a0a5d50f32f6c0499fef5dc256c50ab6c">   71</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="class_jogador.html#a0a5d50f32f6c0499fef5dc256c50ab6c">Jogador::getStatus</a>()</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;{</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="class_jogador.html#aac759f4ab977b41dbeb8f089bbff8eda">status</a>;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div><div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="class_jogador.html#aa57278e25d3ac24860223b40278dfced">   79</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_jogador.html#aa57278e25d3ac24860223b40278dfced">Jogador::jogarDados</a>(){</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <a class="code" href="class_dado.html">Dado</a> d;</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">int</span> d1 = d.<a class="code" href="class_dado.html#a9c7fa6e4ac6ca7c72bc7cd8e5d65e7a9">jogar</a>();</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">int</span> d2 = d.<a class="code" href="class_dado.html#a9c7fa6e4ac6ca7c72bc7cd8e5d65e7a9">jogar</a>();</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    this-&gt;<a class="code" href="class_jogador.html#add2f41fe461e5c75f86324cbd5066d59">soma_acumulada</a> += d1 + d2;</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div><div class="ttc" id="class_jogador_html_a0d9f47c126ff7fd73863c1bcba346afe"><div class="ttname"><a href="class_jogador.html#a0d9f47c126ff7fd73863c1bcba346afe">Jogador::setNome</a></div><div class="ttdeci">void setNome(string nome)</div><div class="ttdoc">Coloca Nome. </div><div class="ttdef"><b>Definition:</b> <a href="jogador_8cpp_source.html#l00013">jogador.cpp:13</a></div></div>
+<div class="ttc" id="jogador_8h_html"><div class="ttname"><a href="jogador_8h.html">jogador.h</a></div><div class="ttdoc">Declara as funções e alguns parâmetros importantes para jogador.cpp. </div></div>
+<div class="ttc" id="class_jogador_html_ae3fbee4756dafc8a7b1775d54c1ddf5b"><div class="ttname"><a href="class_jogador.html#ae3fbee4756dafc8a7b1775d54c1ddf5b">Jogador::setStatus</a></div><div class="ttdeci">void setStatus(int i)</div><div class="ttdoc">Modifica o status do jogador. </div><div class="ttdef"><b>Definition:</b> <a href="jogador_8cpp_source.html#l00047">jogador.cpp:47</a></div></div>
+<div class="ttc" id="class_dado_html"><div class="ttname"><a href="class_dado.html">Dado</a></div><div class="ttdef"><b>Definition:</b> <a href="dado_8h_source.html#l00010">dado.h:10</a></div></div>
+<div class="ttc" id="class_jogador_html_aa57278e25d3ac24860223b40278dfced"><div class="ttname"><a href="class_jogador.html#aa57278e25d3ac24860223b40278dfced">Jogador::jogarDados</a></div><div class="ttdeci">void jogarDados()</div><div class="ttdoc">Metodo que joga dados e já coloca o valor adicionando em soma acumulada. </div><div class="ttdef"><b>Definition:</b> <a href="jogador_8cpp_source.html#l00079">jogador.cpp:79</a></div></div>
+<div class="ttc" id="class_jogador_html_a3e62c32199fc9cfbcf22cf83f9008be6"><div class="ttname"><a href="class_jogador.html#a3e62c32199fc9cfbcf22cf83f9008be6">Jogador::~Jogador</a></div><div class="ttdeci">~Jogador()</div><div class="ttdoc">Metodo destrutor. </div><div class="ttdef"><b>Definition:</b> <a href="jogador_8cpp_source.html#l00030">jogador.cpp:30</a></div></div>
+<div class="ttc" id="class_jogador_html_a2d60be9d209194e0a9451aca6f1f12ec"><div class="ttname"><a href="class_jogador.html#a2d60be9d209194e0a9451aca6f1f12ec">Jogador::nome</a></div><div class="ttdeci">string nome</div><div class="ttdef"><b>Definition:</b> <a href="jogador_8h_source.html#l00020">jogador.h:20</a></div></div>
+<div class="ttc" id="class_jogador_html_afbb18454d2e8bd060a16cbabaec87c9a"><div class="ttname"><a href="class_jogador.html#afbb18454d2e8bd060a16cbabaec87c9a">Jogador::getSoma_acumulada</a></div><div class="ttdeci">int getSoma_acumulada()</div><div class="ttdoc">Pega valor de Soma acumulada. </div><div class="ttdef"><b>Definition:</b> <a href="jogador_8cpp_source.html#l00063">jogador.cpp:63</a></div></div>
+<div class="ttc" id="class_jogador_html_add2f41fe461e5c75f86324cbd5066d59"><div class="ttname"><a href="class_jogador.html#add2f41fe461e5c75f86324cbd5066d59">Jogador::soma_acumulada</a></div><div class="ttdeci">int soma_acumulada</div><div class="ttdef"><b>Definition:</b> <a href="jogador_8h_source.html#l00021">jogador.h:21</a></div></div>
+<div class="ttc" id="class_jogador_html_a94a4939138ce04d2f3ceb68257517ac1"><div class="ttname"><a href="class_jogador.html#a94a4939138ce04d2f3ceb68257517ac1">Jogador::Jogador</a></div><div class="ttdeci">Jogador()</div><div class="ttdoc">Metodo construtor. </div><div class="ttdef"><b>Definition:</b> <a href="jogador_8cpp_source.html#l00021">jogador.cpp:21</a></div></div>
+<div class="ttc" id="class_jogador_html_a0a5d50f32f6c0499fef5dc256c50ab6c"><div class="ttname"><a href="class_jogador.html#a0a5d50f32f6c0499fef5dc256c50ab6c">Jogador::getStatus</a></div><div class="ttdeci">int getStatus()</div><div class="ttdoc">Pega valor de Status. </div><div class="ttdef"><b>Definition:</b> <a href="jogador_8cpp_source.html#l00071">jogador.cpp:71</a></div></div>
+<div class="ttc" id="class_jogador_html_a16221b33e47d7e32a72d743a83a54ba9"><div class="ttname"><a href="class_jogador.html#a16221b33e47d7e32a72d743a83a54ba9">Jogador::setSoma_acumulada</a></div><div class="ttdeci">void setSoma_acumulada(int i)</div><div class="ttdoc">Coloca soma acumulada. </div><div class="ttdef"><b>Definition:</b> <a href="jogador_8cpp_source.html#l00038">jogador.cpp:38</a></div></div>
+<div class="ttc" id="class_jogador_html_ad99c974eb0be82064fbca936adc246d9"><div class="ttname"><a href="class_jogador.html#ad99c974eb0be82064fbca936adc246d9">Jogador::getNome</a></div><div class="ttdeci">string getNome()</div><div class="ttdoc">Pega valor da variável Nome. </div><div class="ttdef"><b>Definition:</b> <a href="jogador_8cpp_source.html#l00055">jogador.cpp:55</a></div></div>
+<div class="ttc" id="class_jogador_html_aac759f4ab977b41dbeb8f089bbff8eda"><div class="ttname"><a href="class_jogador.html#aac759f4ab977b41dbeb8f089bbff8eda">Jogador::status</a></div><div class="ttdeci">int status</div><div class="ttdef"><b>Definition:</b> <a href="jogador_8h_source.html#l00022">jogador.h:22</a></div></div>
+<div class="ttc" id="class_dado_html_a9c7fa6e4ac6ca7c72bc7cd8e5d65e7a9"><div class="ttname"><a href="class_dado.html#a9c7fa6e4ac6ca7c72bc7cd8e5d65e7a9">Dado::jogar</a></div><div class="ttdeci">int jogar()</div><div class="ttdoc">Funcao que obtem o valor aleatório de um dado. </div><div class="ttdef"><b>Definition:</b> <a href="dado_8cpp_source.html#l00022">dado.cpp:22</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_0c68614ac8d8401edbf4146ded722294.html">Classes</a></li><li class="navelem"><a class="el" href="dir_67990f6eab70a7995f81f8346328b1da.html">Jogador</a></li><li class="navelem"><a class="el" href="jogador_8cpp.html">jogador.cpp</a></li>
+    <li class="footer">Gerado em Sexta, 3 de Maio de 2019 16:02:33 para Blackjack Et por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+digraph "Jogador::setNome"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node19 [label="Jogador::setNome",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node19 -> Node20 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node20 [label="Mesa::adicionaJogador",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d8/d5e/class_mesa.html#a06b001e907762c73065230bbae1b7272",tooltip="Adiciona o jogado com um nome (fornecido pelo usuário) ao vector de jogadores. "];
+  Node20 -> Node21 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node21 [label="Mesa::run",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d8/d5e/class_mesa.html#a129bc8199f83880303f1b655eca5d95d",tooltip="Inicia os procedimentos da criação de uma mesa. "];
+  Node21 -> Node22 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node22 [label="Lobby::runGame",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$db/dd7/class_lobby.html#ad2e0ed41f1b35709445d60221d311d98",tooltip="Responsavel por iniciar uma Mesa ou sair do Programa. "];
+  Node22 -> Node23 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node23 [label="main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$df/d0a/main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089",tooltip="Main. "];
+  Node19 -> Node24 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node24 [label="Mesa::iniciaPartida",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d8/d5e/class_mesa.html#ad5b6f60e66a0a8c3fe8943f206348b86",tooltip="Inicia uma partida. "];
+  Node24 -> Node21 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}
