@@ -26,7 +26,7 @@ cd Programa_02
 make
 ```
 ### Como executar
-no diiretório Programa_02 digite:
+no diretório Programa_02 digite:
 ```
 ./blackjack!
 ```
