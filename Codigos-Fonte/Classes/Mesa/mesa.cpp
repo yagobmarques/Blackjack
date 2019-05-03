@@ -6,7 +6,6 @@
 * @date 01/05/2019
 */
 #include "mesa.h"
-#include "colors.h"
 /**
 * @brief construtor com valores padrão
 * @return Nulo

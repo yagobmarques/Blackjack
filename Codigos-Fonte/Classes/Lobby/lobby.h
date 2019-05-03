@@ -7,10 +7,10 @@
 */
 #include <iostream>
 #include <string>
-#include "jogador.h"
-#include "mesa.h"
-#include "dado.h"
-#include "colors.h"
+#include "../Jogador/jogador.h"
+#include "../Mesa/mesa.h"
+#include "../Dado/dado.h"
+#include "../../Util/colors.h"
 
 using std::cin;
 using std::cout;

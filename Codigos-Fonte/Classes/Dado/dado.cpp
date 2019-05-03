@@ -5,7 +5,6 @@
 * @since 25/04/2019
 * @date 01/05/2019
 */
-#include <random>
 #include "dado.h"
 
 /**

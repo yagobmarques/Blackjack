@@ -5,7 +5,7 @@
 * @since 25/04/2019
 * @date 01/05/2019
 */
-#include "lobby.h"
+#include "../Lobby/lobby.h"
 /**
 * @brief Main
 * @param argc Quantidade de parametros

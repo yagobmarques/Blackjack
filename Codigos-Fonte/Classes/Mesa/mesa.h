@@ -11,8 +11,9 @@
 #include <iostream>
 #include <bits/stdc++.h>
 #include <string>
-#include "jogador.h"
-#include "dado.h"
+#include "../Jogador/jogador.h"
+#include "../Dado/dado.h"
+#include "../../Util/colors.h"
 
 class Mesa
 {

@@ -11,7 +11,7 @@
 #define JOGADOR_H
 #include <string>
 #include <iostream>
-#include "dado.h"
+#include "../Dado/dado.h"
 using namespace std;
 
 class Jogador

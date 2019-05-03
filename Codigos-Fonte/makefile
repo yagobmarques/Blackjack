@@ -4,23 +4,22 @@
  PROG = blackjack! 
  CC = g++
  FLAGS = -std=c++11 -O0 -g -Wall
- OBJS = main.o mesa.o jogador.o dado.o lobby.o
-
+ OBJS = $(BIN_PATH)/main.o $(BIN_PATH)/mesa.o $(BIN_PATH)/jogador.o $(BIN_PATH)/dado.o $(BIN_PATH)/lobby.o
+ BIN_PATH = ./BinFiles
  $(PROG):$(OBJS)
 	$(CC) -o $(PROG) $(OBJS)
-	rm -f *.o
-	./$(PROG)
  all:
 	$(PROG)
- main.o:
-	$(CC) $(FLAGS) -c main.cpp
- mesa.o: mesa.h
-	$(CC) $(FLAGS) -c mesa.cpp
- jogador.o: jogador.h
-	$(CC) $(FLAGS) -c jogador.cpp
- dado.o: dado.h
-	$(CC) $(FLAGS) -c dado.cpp
- lobby.o: lobby.h
-	$(CC) $(FLAGS) -c lobby.cpp
+ $(BIN_PATH)/main.o:
+	$(CC) $(FLAGS) -c ./Classes/Main/main.cpp
+ $(BIN_PATH)/mesa.o: ./Classes/Mesa/mesa.h
+	$(CC) $(FLAGS) -c ./Classes/Mesa/mesa.cpp
+ $(BIN_PATH)/jogador.o: ./Classes/Jogador/jogador.h
+	$(CC) $(FLAGS) -c ./Classes/Jogador/jogador.cpp
+ $(BIN_PATH)/dado.o: ./Classes/Dado/dado.h
+	$(CC) $(FLAGS) -c ./Classes/Dado/dado.cpp
+ $(BIN_PATH)/lobby.o: ./Classes/Lobby/lobby.h
+	$(CC) $(FLAGS) -c ./Classes/Lobby/lobby.cpp
+	mv *.o ./BinFiles/
  cls:
 	rm -f $(PROG) $(OBJS)
